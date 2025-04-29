@@ -5,21 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hamro Patro Calendar</title>
   <style>
-    /* make sure html and body both fill the screen */
+    /* ensure full-screen coverage */
     html, body {
       margin: 0;
-      padding: 0;
       height: 100%;
       width: 100%;
     }
     body {
-      /* full-screen background */
-      background-image: url('https://images3.alphacoders.com/130/1304993.jpeg');
+      /* use the locally-hosted image */
+      background: url('background.jpg') no-repeat center center fixed;
       background-size: cover;
-      background-position: center center;
-      background-repeat: no-repeat;
 
-      /* flex to center iframe vertically and push it to the right */
+      /* flex to center-vertically & push iframe right */
       display: flex;
       justify-content: flex-end;
       align-items: center;
@@ -28,8 +25,8 @@
       border: none;
       width: 800px;
       height: 840px;
-      margin-right: 40px;  /* distance from right edge */
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+      margin-right: 40px;   /* optional gap from right edge */
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
     }
   </style>
 </head>
